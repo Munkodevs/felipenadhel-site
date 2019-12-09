@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<style>
+
+		body {
+			background-color:#352b31;
+			margin:0;
+		}
+
+		.but {
+			position:relative;
+			display:inline-block;
+			height:120px;
+			width:168px;
+			margin:0 10px;
+		}
+
+		.but img {
+			position:absolute;
+			left:0;
+			top:0;
+			-webkit-transition: opacity 0.12s ease-in-out;
+			-moz-transition: opacity 0.12s ease-in-out;
+			-o-transition: opacity 0.12s ease-in-out;
+			transition: opacity 0.12s ease-in-out, transform 0.12s steps(4);
+
+			transform: translate(0px, 0px);
+		
+		}
+
+		.but img.top:hover {
+			opacity:0;
+		}
+
+		.but:hover img {
+			transform: translate(0px, -12px);
+		}
+
+		.links{
+			position:absolute;
+			text-align:center;
+			bottom: calc(20vh - 100px);
+			width:100%;
+		}
+
+		#logo{
+			position:absolute;
+			text-align: center;
+			top: calc(20vh - 100px);
+			width:100%;
+		}
+
+		@media screen and (max-height: 600px) {
+			.links{
+				position:relative;
+				top: 60px;
+			}
+			#logo{
+				position:relative;
+				top: 20px;
+			}
+			html, body {
+            	height: 600px;
+            }
+		}
+
+		/* pssst, eu não tenho ideia do que estou fazendo */
+
+	</style>
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+	<title>Felipe Ferreira</title>
+
+
+
+</head>
+
+
+
+<body>
+
+<div id="logo">
+	<img src="images/header.png">
+</div>
+<div class="links">
+	<a class="but" href="https://discord.gg/s24cZV6">
+	  	<img class="bottom" src="images/chat-A.png">
+	  	<img class="top"    src="images/chat-B.png">
+	</a>
+	<a class="but" href="https://felipenadhelgames.wixsite.com/gamestore">
+	  	<img class="bottom" src="images/games-A.png">
+	  	<img class="top"    src="images/games-B.png">
+	</a>
+	<a class="but" href="https://felipenadhelgames.wixsite.com/oficialsite">
+	  	<img class="bottom" src="images/artwork-A.png">
+	  	<img class="top"    src="images/artwork-B.png">
+	</a>
+</div>
+
+
+</body>
+</html>
