@@ -1,4 +1,4 @@
-class NitroBlock {
+class Browser {
     //By: Felipe F.
     getInfo() {
         return {
@@ -38,4 +38,4 @@ class NitroBlock {
         return m;
     }
 }
-Scratch.extensions.register(new Links());
+Scratch.extensions.register(new Browser());
