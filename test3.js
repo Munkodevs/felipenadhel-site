@@ -19,7 +19,7 @@ class Web {
         {
           opcode: 'goToUrl',
 
-          blockType: Scratch.BlockType.BLOCK,
+          blockType: Scratch.BlockType.REPORTER,
 
           text: 'go to URL [TextURL]',
           arguments: {
