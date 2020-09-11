@@ -133,9 +133,9 @@ class Web {
           }
         },
         {
-          opcode: 'currentMillisecond',
+          opcode: 'currentUrl',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'current millisecond'
+          text: 'current URL'
         },
         {
           opcode: 'fetchFrom',
@@ -241,8 +241,8 @@ class Web {
     return STRING.slice(Math.max(1, START) - 1, Math.min(STRING.length, END));
   }
 
-  currentMillisecond() {
-    return Date.now() % 1000;
+  currentUrl() {
+    return window.location.href;
   }
 
   fetchFrom({URL}) {
