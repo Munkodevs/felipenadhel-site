@@ -26,7 +26,7 @@ class Web {
             Key: {
               type: Scratch.ArgumentType.STRING,
               defaultValue: 'Name'
-            }
+            },
             Item: {
               type: Scratch.ArgumentType.STRING,
               defaultValue: 'John'
