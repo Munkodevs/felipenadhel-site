@@ -17,15 +17,19 @@ class Web {
 
       blocks: [
         {
-          opcode: 'goToUrl',
+          opcode: 'localStorageSet',
 
           blockType: Scratch.BlockType.COMMAND,
 
-          text: 'go to URL [TextURL]',
+          text: 'Set [Key] [Item] on LocalStorage',
           arguments: {
-            TextURL: {
+            Key: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'https://google.com/'
+              defaultValue: 'Name'
+            }
+            Item: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'John'
             }
           }
         },
@@ -205,8 +209,9 @@ class Web {
     }
   }
 
-  goToUrl({TextURL}) {
-    window.open("TextURL");
+  localStorageSet({Key}{Item}) {
+    localStorage.setItem("Key", "Item");
+    console.log("localstorage its working")
   }
 
   isLessOrEqual({A, B}) {
